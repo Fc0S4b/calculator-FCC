@@ -1,0 +1,96 @@
+@import url("https://fonts.cdnfonts.com/css/sf-digital-readout");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: black;
+}
+
+body,
+html {
+  height: 100vh;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  background: #121212;
+  color: #d8d8d8;
+  font-family: "SF Digital Readout", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.display-container {
+  text-align: end;
+  margin: 1px;
+  padding: 10px;
+  background-color: black;
+}
+
+.pre-render {
+  color: #858585;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.btn-group {
+  display: grid;
+}
+
+.operators {
+  grid-column: 1/5;
+}
+.numbers-ctrl {
+  display: flex;
+}
+.numbers {
+  display: grid;
+}
+.controls {
+  display: flex;
+  flex-direction: column;
+}
+
+#zero {
+  grid-column: 1/4;
+  width: 154px;
+  gap: 1px;
+}
+
+button {
+  height: 40px;
+  width: 50px;
+  color: #a97ae2;
+  background-color: #1d1d1d;
+  border: none;
+  margin: 1px;
+}
+button:hover {
+  background-color: #2d2d2d;
+  color: #906bbd;
+}
+
+#AllClear {
+  background-color: #c38fff;
+  color: #0b080f;
+}
+#AllClear:hover {
+  background-color: #9870c9;
+  color: #d8d8d8;
+}
+
+#clear {
+  color: #018786;
+}
+#clear:hover {
+  background-color: #018786;
+  color: #0b080f;
+}
